@@ -1,0 +1,21 @@
+<form class="form-group" [formGroup]="loginForm">
+  <label for="email" class="form-label">Email</label>
+  <input class="form-control"
+         [ngClass]="{'is-invalid': email.invalid && email.touched}"
+         formControlName="email"
+         type="email"
+         id="email"
+         name="email"
+         required/>
+  <div *ngIf="email.invalid && email.touched" class="invalid-feedback">
+    <span *ngIf="email.errors && email.errors['required']">Email is required.</span>
+    <span *ngIf="email.errors && email.errors['email']">Email is not in correct format.</span>
+  </div>
+  <label for="password" class="form-label">Password</label>
+  <input class="form-control" formControlName="password"
+         [ngClass]="{'is-invalid': password.invalid && password.touched}"
+         type="password" id="password" name="password" required/>
+  <div *ngIf="password.invalid && password.touched" class="invalid-feedback">
+    <span *ngIf="password.errors && password.errors['required']">Email is required.</span>
+  </div>
+</form>

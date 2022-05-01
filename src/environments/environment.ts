@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyDLZOxxILAzQ7ms6b1cnBqYf8rMo_UxJ-4",
+    authDomain: "bakochat-18875.firebaseapp.com",
+    projectId: "bakochat-18875",
+    storageBucket: "bakochat-18875.appspot.com",
+    messagingSenderId: "889946781489",
+    appId: "1:889946781489:web:dac0ddffeaa5d734b82210"
+  }
 };
 
 /*

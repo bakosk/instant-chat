@@ -1,0 +1,7 @@
+<main>
+  <app-login-form (loginData)="loginDataChanged($event)"></app-login-form>
+  <div>
+    <span *ngIf="signUpError">Provide email and password</span>
+    <button class="btn btn-primary" type="submit" (click)="registerUser()">Sign up</button>
+  </div>
+</main>
